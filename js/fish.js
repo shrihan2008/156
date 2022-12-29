@@ -2,9 +2,9 @@ AFRAME.registerComponent('fish',{
     init :function(){
         for(var i=1;i<20;i++){
             var id=`fish${id}`
-            var posX =(Math.random() * 3000 + (-1000));      
+            var posX =(Math.random() * 30 + (-1000));      
       var posY = (Math.random() * 2 - (-1));
-      var posZ = (Math.random() * 3000 + 1000);
+      var posZ = (Math.random() * 30 + 1000);
 
       var position = { x: posX, y: posY, z: posZ };
 
@@ -14,10 +14,10 @@ AFRAME.registerComponent('fish',{
     },
 
     flyingbirds:(id,position)=>{
-        var terrain=document.querySelector("#terrain")
+        var terrain=document.querySelector("#island")
   
         var bird_1=document.createElement("a-entity")
-        bird_1.setAttribute("gltf-model","./assets/models/flying_bird/scene.gltf")
+        bird_1.setAttribute("gltf-model","../assets/fish/scene.gltf")
         bird_1.setAttribute("animation-mixer",{})
         bird_1.setAttribute("id",id)
         bird_1.setAttribute("position",position)

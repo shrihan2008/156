@@ -6,9 +6,9 @@ AFRAME.registerComponent("coin", {
         var id = `coin${i}`;
   
         //position variables     
-        var posX =(Math.random() * 3000 + (-1000));      
-        var posY = (Math.random() * 2 + (-1));
-        var posZ = (Math.random() * 3000 - 1000);
+        var posX =(Math.random() * 30 + (-1000));      
+        var posY = (Math.random() * 0.5 + (-1));
+        var posZ = (Math.random() * 30 - (1000));
   
         var position = { x: posX, y: posY, z: posZ };
   
@@ -19,7 +19,7 @@ AFRAME.registerComponent("coin", {
   
     createRings: function(id, position) { 
       
-      var terrainEl = document.querySelector("#terrain");
+      var terrainEl = document.querySelector("#island");
   
       var ringEl = document.createElement("a-entity");
   

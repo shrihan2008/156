@@ -33,7 +33,7 @@
       ></a-asset-item>
         <a-asset-item
           id="xyz"
-          src="assets/coral_fish/scene.gltf"
+          src="assets/fish/scene.gltf"
         ></a-asset-item>
         <a-asset-item id="turtle" src="assets/turtle/scene.gltf"></a-asset-item>        
         <a-asset-item
@@ -115,11 +115,12 @@
   </a-entity>
       <a-entity
       gltf-model="#coin"
-      scale="0.1 0.1 0.1"
-      position="5 5 15"
+      scale="1 1 1"
+      position="0 0 0"
       rotation="0 90 -20"        
-      diver-rotation-reader
+     
       coin
+      static-body
     >
 </a-entity>
 
@@ -127,10 +128,11 @@
 <a-entity
 gltf-model="#fish"
 scale="0.1 0.1 0.1"
-position="5 3 15"
+position="0 0 0"
 rotation="0 90 -20"        
-diver-rotation-reader
+
 fish
+static-body
 >
 </a-entity>
        
