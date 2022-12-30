@@ -6,9 +6,9 @@ AFRAME.registerComponent("coin", {
         var id = `coin${i}`;
   
         //position variables     
-        var posX =(Math.random() * 30 + (-1000));      
+        var posX =(Math.random() * 1 + (-3));      
         var posY = (Math.random() * 0.5 + (-1));
-        var posZ = (Math.random() * 30 - (1000));
+        var posZ = (Math.random() * 2 - (10));
   
         var position = { x: posX, y: posY, z: posZ };
   
